@@ -93,7 +93,7 @@ public class HashMapImpl<K, V> implements IMap<K, V>{
 
         int index = (capacity - 1) & hash(key);
 
-        System.out.println("index: " + index + " KEY: " + key);
+//        System.out.println("index: " + index + " KEY: " + key);
 
         if (buckets[index] == null) {
             buckets[index] = new Node(hash(key), key, value, null);
